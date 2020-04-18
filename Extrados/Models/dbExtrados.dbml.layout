@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 12.5" name="dbExtrados">
+  <DataContextMoniker Name="/dbExtradosDataContext" />
+  <nestedChildShapes>
+    <classShape Id="afd13319-ffc6-462e-b059-6a5688ce56af" absoluteBounds="0.75, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbExtradosDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07510a47-b50b-4d63-8304-827403a9caf6" absoluteBounds="0.765, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84edddf9-02f3-45a3-9b81-3fb26b9f18ed" absoluteBounds="1.5, 7.375, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/dbExtradosDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66f910be-3742-4839-9fb7-ce9469225098" absoluteBounds="1.5150000000000001, 7.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c6a8c02-e48d-40b7-80aa-3c2973c3385a" absoluteBounds="6.25, 1.125, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/dbExtradosDataContext/DetallesPedido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3af9cda9-1e7c-4ca3-970f-33fe0a61e381" absoluteBounds="6.265, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6e9a351-c002-4453-b911-5740422ac77a" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbExtradosDataContext/Marca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef496a91-c325-4b36-86a3-4ba4303eb4b8" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00a1f275-0ea9-4e86-902c-d6638ad53841" absoluteBounds="3.5, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbExtradosDataContext/Pedido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f7ed64d-58fc-4753-bc5e-21820492bdfe" absoluteBounds="3.515, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e0dc534c-d799-43cf-b6c2-c4deaf902293" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dbExtradosDataContext/Producto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="650254c9-e9dc-4a9a-bec0-c1641d9e81eb" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="443a2701-0347-4620-af9c-9e754197f6c0" absoluteBounds="1.75, 11, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/dbExtradosDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d03300bc-2481-4771-9480-cb154ecbe531" absoluteBounds="1.7650000000000001, 11.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.125 : 7.375); (2.125 : 6.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbExtradosDataContext/Usuario/Usuario_Cliente" />
+      <nodes>
+        <classShapeMoniker Id="84edddf9-02f3-45a3-9b81-3fb26b9f18ed" />
+        <classShapeMoniker Id="afd13319-ffc6-462e-b059-6a5688ce56af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.66429768880208); (7.25 : 5.66429768880208); (7.25 : 2.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbExtradosDataContext/Pedido/Pedido_DetallesPedido" />
+      <nodes>
+        <classShapeMoniker Id="00a1f275-0ea9-4e86-902c-d6638ad53841" />
+        <classShapeMoniker Id="8c6a8c02-e48d-40b7-80aa-3c2973c3385a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.66429768880208); (3.5 : 5.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbExtradosDataContext/Cliente/Cliente_Pedido" />
+      <nodes>
+        <classShapeMoniker Id="afd13319-ffc6-462e-b059-6a5688ce56af" />
+        <classShapeMoniker Id="00a1f275-0ea9-4e86-902c-d6638ad53841" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.01044840494792); (6.25 : 2.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbExtradosDataContext/Producto/Producto_DetallesPedido" />
+      <nodes>
+        <classShapeMoniker Id="e0dc534c-d799-43cf-b6c2-c4deaf902293" />
+        <classShapeMoniker Id="8c6a8c02-e48d-40b7-80aa-3c2973c3385a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbExtradosDataContext/Marca/Marca_Producto" />
+      <nodes>
+        <classShapeMoniker Id="c6e9a351-c002-4453-b911-5740422ac77a" />
+        <classShapeMoniker Id="e0dc534c-d799-43cf-b6c2-c4deaf902293" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 11); (2.625 : 9.9151025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbExtradosDataContext/Role/Role_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="443a2701-0347-4620-af9c-9e754197f6c0" />
+        <classShapeMoniker Id="84edddf9-02f3-45a3-9b81-3fb26b9f18ed" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
