@@ -23,74 +23,89 @@
 @*DATATABLE*@
 <div id="tabla-data"></div>
 
-<!-- Modal -->
+
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Productos</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Agregar/Editar Producto</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <table style="width:90%;margin:auto">
+                <form>
+
+                    <table style="width:90%;margin:auto;">
+                        <tr>
+                            <td style="width:30%;margin:auto;"> <label for="recipient-name" class="col-form-label">Código:</label> </td>
+                            <td style="width:60%;margin:auto;"> <input type="text" class="form-control" id="recipient-name"> </td>
+                            <td style="width:10%;margin:auto;"> <label> <i class="fas fa-check"></i> </label> </td>
+                        </tr>
+
+                        <tr>
+
+                            <td style="width:30%;margin:auto;"> <label for="recipient-name" class="col-form-label">Nombre:</label> </td>
+                            <td style="width:60%;margin:auto;"> <input type="text" class="form-control" id="recipient-name"> </td>
+                            <td style="width:10%;margin:auto;"> <label>  </label> </td>
+                        </tr>
+
+                        <tr>
+
+                            <td style="width:30%;margin:auto;"> <label for="recipient-name" class="col-form-label">Descripción:</label> </td>
+                            <td style="width:60%;margin:auto;">  <textarea class="form-control" id="message-text"></textarea> </td>
+                            <td style="width:10%;margin:auto;"> <label> <i class="fas fa-check"></i> </label> </td>
+                        </tr>
+
+                        <tr>
+
+                            <td style="width:30%;margin:auto;"> <label for="recipient-name" class="col-form-label">Marca:</label> </td>
+                            <td style="width:60%;margin:auto;">
+                                <select class="form-control" id="exampleFormControlSelect1" >
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </td>
+                            <td style="width:10%;margin:auto;"> <label> <i class="fas fa-check"></i> </label> </td>
+                        </tr>
+
+                        <tr>
+
+                            <td style="width:30%;margin:auto;"> <label for="recipient-name" class="col-form-label">Precio Unitario:</label> </td>
+                            <td style="width:60%;margin:auto;"> <input type="text" class="form-control" id="recipient-name"> </td>
+                            <td style="width:10%;margin:auto;"> <label> <i class="fas fa-check"></i> </label> </td>
+                        </tr>
+
+                        <tr>
+
+                            <td style="width:30%;margin:auto;"> <label for="recipient-name" class="col-form-label">Estado:</label> </td>
+                            <td style="width:60%;margin:auto;">
+                                <label style="width:1rem;"></label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Activo</label>
+                            </td>
+                            <td style="width:10%;margin:auto;"> <label> <i class="fas fa-check"></i> </label> </td>
+                        </tr>
 
 
-                    <tr>
-                        <td>CODIGO</td>
-                        <td><input type="text" id="txtIdProducto" readonly class="limpiar" /><label id="lbltxtIdProducto"></label></td>
-                    </tr>
+                    </table>
 
-                    <tr>
-                        <td>NOMBRE</td>
-                        <td><input type="text" id="txtNombre" class="limpiar obligatorio form-control" /><label id="lbltxtNombre"></label></td>
-
-                    </tr>
-
-                    <tr>
-                        <td>MARCA</td>
-                        <td><select id="cboMarca" class="limpiarCbo obligatorio form-control"></select><label id="lblcboIdRubro"></label></td>
-                    </tr>
-
-
-                    <tr>
-                        <td>PRECIO ($)</td>
-                        <td><input type="text" id="txtPrecio" class="limpiar obligatorio" /><label id="lbltxtPrecio"></label></td>
-
-                    </tr>
-
-
-                    <tr>
-                        <td>ESTADO</td>
-                        <td><input type="text" id="txtCategoria" class="limpiar obligatorio" /><label id="lbltxtCategoria"></label></td>
-                    </tr>
-
-
-                    <tr>
-                        <td>IMAGEN</td>
-                        <td> <img id="imgFoto" width="100" height="100" style="border:1px solid" /><label id="lblimgFoto"></label></td>
-                    </tr>
-
-                    <tr>
-                        <td>IMAGEN</td>
-                        <td><input id="btnFoto" type="file" value="..." /></td>
-
-                    </tr>
-
-                </table>
-
-
+                    <div class="form-group" style="width:90%;margin:auto;">
+                        <label for="exampleFormControlFile1">Imagen:</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <button id="btnCancelar" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button id="btnAceptar" onclick="agregarEditar()" type="button" class="btn btn-success">Aceptar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Aceptar</button>
             </div>
         </div>
     </div>
 </div>
-
-
 
 @*JAVASCRIPT REFERENCIAS*@
 <script src="~/Scripts/datatables.min.js"></script>
