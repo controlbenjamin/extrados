@@ -14,7 +14,7 @@ function inicializar() {
 function mostrarTabla() {
 
        //CABECERA DE LA TABLA
-    var arrayCabecera = ["CODIGO", "NOMBRE", "MARCA", "PRECIO UNITARIO", "ESTADO", "ACCIONES"];
+    var arrayCabecera = ["CODIGO", "NOMBRE", "MARCA", "PRECIO UNITARIO", "ESTADO", "EDITAR"];
     //rellenarTabla("Controlador", "Json_Accion","idTag", arrayCabeceraString)
     rellenarTabla("Producto", "ListarProductos", "tabla-data", arrayCabecera);
 }
@@ -68,7 +68,6 @@ function rellenarTabla(controlador, jsonAccion, idTag, arrayCabecera) {
             //agregamos los iconos
             contenido += "<td>";
             contenido += "<button id='btnEditar' class='btn btn-primary' onclick='abrirModal(" + idItem + ")' data-toggle='modal' data-target='#exampleModal'><i class='fas fa-edit'></i></button>   ";
-            contenido += "<button id='btnEliminar' class='btn btn-danger' onclick='eliminar(" + idItem + ")'  ><i class='fas fa-trash-alt'></i></button>";
             contenido += "</td>";
 
             contenido += "</tr>";

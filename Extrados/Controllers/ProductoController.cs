@@ -55,8 +55,31 @@ namespace Extrados.Controllers
         }
 
 
+        public ActionResult Cards()
+        {
+            return View();
+        }
 
+        public JsonResult ListarCards()
+        {
+            Models.dbExtradosDataContext db = new Models.dbExtradosDataContext();
 
+            var lista = (from _producto in db.Productos
+                         join _marca in db.Marcas
+                         on _producto.IdMarca equals _marca.Id
+                         select new
+                         {
+                             UBICACION = _producto.UrlImange,
+                             NOMBRE = _producto.Nombre,
+                             MARCA = _marca.Nombre,
+                             DESCRIPCION = _producto.Descripcion,
+                             PRECIO_UNITARIO = _producto.PrecioUnitario
+
+                         }).ToList();
+
+            return Json(lista, JsonRequestBehavior.AllowGet);
+
+        }
         //////////////////////////////////////////////////////////////////////////////////////////
         ///
 

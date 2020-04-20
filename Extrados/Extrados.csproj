@@ -130,6 +130,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbExtrados.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Paginador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,11 +151,34 @@
     <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\jquery-ui.theme.min.css" />
+    <Content Include="Content\pagination.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="images\productos\afeitadora.png" />
+    <Content Include="images\productos\aquaman.png" />
+    <Content Include="images\productos\batman.png" />
+    <Content Include="images\productos\capitan-america.png" />
+    <Content Include="images\productos\capitan-marvel.png" />
+    <Content Include="images\productos\ciclope.png" />
+    <Content Include="images\productos\daredevil.png" />
+    <Content Include="images\productos\depiladora.png" />
+    <Content Include="images\productos\flash.png" />
+    <Content Include="images\productos\green-arrow.png" />
+    <Content Include="images\productos\hulk.png" />
+    <Content Include="images\productos\ironman.png" />
+    <Content Include="images\productos\lavadora.png" />
+    <Content Include="images\productos\licuadora.png" />
+    <Content Include="images\productos\linterna-verde.png" />
+    <Content Include="images\productos\minipimer.png" />
+    <Content Include="images\productos\robin.png" />
+    <Content Include="images\productos\spiderman.png" />
+    <Content Include="images\productos\sr-fantastico.png" />
+    <Content Include="images\productos\superman.png" />
+    <Content Include="images\productos\tv.png" />
+    <Content Include="images\productos\wolverine.png" />
     <Content Include="Models\dbExtrados.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>dbExtrados.designer.cs</LastGenOutput>
@@ -167,6 +191,7 @@
     <Content Include="images\iconos\bootstrap-solid.svg" />
     <Content Include="Scripts\all.min.js" />
     <Content Include="Scripts\Benja\abmData.js" />
+    <Content Include="Scripts\Benja\cards.js" />
     <Content Include="Scripts\Benja\productos.js" />
     <Content Include="Scripts\Benja\rubrosScript.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -183,10 +208,13 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\luckmoshyJqueryPagnation.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\moment-with-locales.min.js" />
     <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\numeral.min.js" />
+    <Content Include="Scripts\pagination.js" />
+    <Content Include="Scripts\pagination.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -200,10 +228,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Producto\Tabla.cshtml" />
     <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Producto\Cards.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\productos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

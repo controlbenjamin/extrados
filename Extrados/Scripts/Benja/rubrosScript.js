@@ -130,7 +130,7 @@ function rellenarTabla(controlador, jsonAccion, idTag, arrayCabecera) {
 
         var contenido = "";
 
-        contenido += "<table id='tabla-paginacion-registros' class='table table-striped'>";
+        contenido += "<table id='tabla-paginacion-registros' class='cards'>";
         contenido += "<thead>";
         contenido += "<tr>";
 
