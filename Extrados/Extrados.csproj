@@ -173,6 +173,7 @@
     <Content Include="images\productos\licuadora.png" />
     <Content Include="images\productos\linterna-verde.png" />
     <Content Include="images\productos\minipimer.png" />
+    <Content Include="images\productos\no-disponible.png" />
     <Content Include="images\productos\robin.png" />
     <Content Include="images\productos\spiderman.png" />
     <Content Include="images\productos\sr-fantastico.png" />

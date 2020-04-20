@@ -67,6 +67,7 @@ namespace Extrados.Controllers
             var lista = (from _producto in db.Productos
                          join _marca in db.Marcas
                          on _producto.IdMarca equals _marca.Id
+                         where _producto.Activo.Equals(true)
                          select new
                          {
                              UBICACION = _producto.UrlImange,
